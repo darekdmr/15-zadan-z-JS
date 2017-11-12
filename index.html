@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>15 zadań JS</title>
+</head>
+<body>
+<h1>15 zadań</h1>
+<nav>
+        <a href="#zad01">01</a>
+        <a href="#zad02">02</a>
+        <a href="#zad03">03</a>
+        <a href="#zad04">04</a>
+        <a href="#zad05">05</a>
+        <a href="#zad06">06</a>
+        <a href="#zad07">07</a>
+        <a href="#zad08">08</a>
+        <a href="#zad09">09</a>
+        <a href="#zad10">10</a>
+        <a href="#zad11">11</a>
+        <a href="#zad12">12</a>
+        <a href="#zad13">13</a>
+        <a href="#zad14">14</a>
+        <a href="#zad15">15</a>
+    </nav>
+
+    <h2 id="zad01">
+        Zadanie 1
+    </h2>
+    <p>
+        Napisz funkcję o nazwie "jakiDzien", która ma zwracać nazwę dzisiejszego dnia.
+    </p>
+    <code>
+        np. jakiDzien() >>> 'Poniedziałek'
+    </code>    
+        
+    <h2 id="zad02">
+        Zadanie 2
+    </h2>
+    <p>
+        Napisz funkcję o nazwie "tekstOdTylu", która przyjmuje parametr "tekst" który jest typu string. Funkcja ma zwracać ten wartość z tekst ale od tyłu.
+    </p>
+    <code>
+        np. tekstOdTylu('JavaScript') >>> 'tpircSavaJ'
+    </code>
+
+    <h2 id="zad03">
+        Zadanie 3
+    </h2>
+    <p> 
+        Napisz funkcję o nazwie "losowaLiczba", która zwraca losową liczbę między 5 a 10.
+    </p>
+    <code>
+        np. losowaLiczba() >>> 6
+        losowaLiczba() >>> 12
+    </code>
+    <!-- 
+    Zadanie 4
+    Napisz funkcję o nazwie "jakiePliki", która zwraca tablicę ze wszystkimi rodzajami rozszerzeń znalezionych w dokumencie html (bez powielenia) w znacznikach img.
+    
+    np.
+    mam w dokumencie takie obrazki:
+    <img src="kot.jpg' />
+    <img src="pies.jpg' />
+    <img src="panda.png' />
+    więc powinna zwrócić: ['.jpg', '.png']
+    
+    
+
+    Zadanie 5
+    Napisz funkcję o nazwie "czywZakresie", która przyjmuje parametry x, y, z które są typu Number. Funkcja ma sprawdzać czy x mieści się pomiedzy y i z.
+    
+    np.
+    czywZakresie(4, 3, 5) >>> true
+    czywZakresie(1, 3, 5) >>> false
+    
+
+
+
+    Zadanie 6
+    Napisz funkcję o naziwe "doklejDoTekstu", która przyjmuje parametr tekst który ma być stringiem. Funkcja ma zwrócić tekst do którego doklei z przodu i z tyłu 3 ostatnie litery z parametru. Trzeba dorobić sprawdzenie czy tekst jest dłuższy niż 3 litery
+    
+    np.
+    doklejDoTekstu('programować') >>> 'waćwać'
+    doklejDoTekstu('aa') >>> 'tekst musi być dłuższy niż 3 litery'
+    
+
+
+
+    Zadanie 7
+    Napisz funkcję o nazwie "zamienLiterke", która przyjmuje 3 parametry, slowo, literka_do_zmiany, literka_zmieniajaca. Funkcja ma za zadanie zmienić każdą literkę podaną w parametrze literka_do_zmiany w słowie na literka_zmieniająca.
+    
+    np.
+    zamienLiterke('ala', 'a', 'o') >>> 'olo'
+    
+    
+    
+    
+    Zadanie 8
+    Napisz funkcję o nazwie "naDuzaLiterke", która przyjmuje parametr zdanie który jest stringiem. Ma zwrócić przetworzony tekst z parametru zdanie w taki sposób by każde słowo zaczynało się z wielkiej litery.
+    
+    np.
+    naDuzaLiterke('ala ma kota') >>> 'Ala Ma Kota'
+
+
+
+    
+    Zadanie 9
+    Napisz funkcję "sortujSlowo", która przyjmuje parametr slowo które jest stringiem. Funkcja ma posortować literki w słowie według kolejności alfabetycznej.
+    
+    np.
+    sortujSlowo('webmaster') >>> 'abeemrstw'
+    
+
+
+
+    Zadanie 10
+    Napisz funkcję "najdluzszeSlowo", która przyjmuje parametr zdanie które jest stringiem. Funkcja musi zwrócić najdłuższe słowo w zdaniu.
+    
+    np.
+    najdluzszeSlowo('wlazł kot na płot') >>> 'wlazł'
+    
+
+
+
+    Zadanie 11
+    Napisz funkcję "sortowanieBabelkowe", która przyjmuje parametr tab który jest typu array (tablicą), z samymi liczbami. Funkcja ma za zadanie posortować tablicę za pomocą algorytmu sortowania bąbelkowego, tutaj znajdziecie informacje czym jest sortowanie bąbelkowe: http://www.algorytm.org/algorytmy-sortowania/sortowanie-babelkowe-bubblesort.html
+    
+    Zadanie 12
+    Napisz funkcję "posortujListeObiektow", która przyjmuje parametr obiekty, który jest typu array (tablica). W tablicy będą znajdować się obiekty, które należy posortować po kluczu order.
+    
+    np.
+    posortujListeObiektow([{title: 'test', order: 2}, {title: 'test 2', order: 1}, {title: 'test 3', order: 0}]) >>> [{title: 'test 3', order: 0}, {title: 'test 2', order: 1}, {title: 'test', order: 2}]
+    
+    Zadanie 13
+    Napisz funkcję "generujTabliceLiczb",  która przyjmuje 2 parametry start i koniec które są typu Number. Funkcja ma zwrócić tablicę która zawiera liczby pomiędzy start i koniec, zwiększane o 1.
+    
+    np.
+    generujTabliceLiczb(2, 8) >>> [2, 3, 4, 5, 6, 7, 8]
+    
+    Zadanie 14
+    Napisz funkcję "podajObecnaDate", która przyjmuje parametr znak. Funkcja ma zwrócić dzisiejszą datę w formacie dd-mm-rrrr, gdzie zamiast myślnika powinna być wartość zmiennej znak.
+    
+    np.
+    podajObecnaDate('/') >>> 02/08/2017
+    podajObecnaDate('-') >>> 02-08-2017
+    
+    Zadanie 15
+    Napisz funkcje "zlaczDwieTablice", która przyjmuje 2 parametry, tab1 i tab2, które są typu array. Funkcja ma za zadanie złączyć 2 tablice w jedną, posortować i zwrócić.
+    
+    np.
+    zlaczDwieTablice([2, 4, 2], [1, 6, 7]) >>> [1, 2, 2, 4, 6, 7] -->
+</body>
+</html>

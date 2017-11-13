@@ -1,0 +1,40 @@
+html {
+    background-color: blueviolet;
+    font-size: 20px;
+    width: 1024px;
+    margin: 0px;
+    padding: 10px;
+}
+
+body {
+/*
+    font-size: 16px;
+*/
+    background-color: blueviolet;
+    margin: 10px;
+    padding: 10px;
+}
+
+#main {
+    background-color: yellow;
+}
+
+div {
+    background-color: aqua;
+    margin: 10px;
+    padding: 10px;
+
+}
+
+#zad01 {
+    
+}
+
+#rozwiazanie01 {
+    height: 40px;
+    background-color: skyblue;
+}
+
+pre {
+    width: 100%;
+}

@@ -4,12 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/lib/prism.css">
-<!-- Initialize highlight -->
-<!-- <script>hljs.initHighlightingOnLoad();</script> -->
+
+<!--        <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js"></script>-->
+        <script src="assets/lib/clipboard.min.js"></script>
+        <script src="assets/lib/prism.js"></script>
+
+       
+        <script src="assets/lib/jquery-3.2.1.min.js"></script>
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <title>15 zadań JS</title>
 </head>
 <body>
+   <div id="main">
     <h1>15 zadań</h1>
     <nav>
         <a href="#zad01">01</a>
@@ -29,30 +45,24 @@
         <a href="#zad15">15</a>
     </nav>
     
-    <h2 id="zad01">
+    <h3 id="zad01">
         Zadanie 1
-    </h2>
+    </h3>
     <p>
         Napisz funkcję o nazwie "jakiDzien", która ma zwracać nazwę dzisiejszego dnia. <br>
+        <code>
         np. jakiDzien() >>> 'Poniedziałek'
+        </code>
     </p>
-    <pre class="line-numbers language-javascript" data-src="assets/js/zad01.js">
-        <code class="language-javascript">
-            function jakiDzien() {
-                var dzienTygodnia = ["Niedziela","Poniedziałek","Wtorek","Środa","Czwartek","Piątek","Sobota"];
-                var d = new Date();
-                x = d.getDay();
-                //    x = 0; //Niedziela
-                return dzienTygodnia[x];
-            }
-        </code>    
+    <pre class="code-toolbar line-numbers language-javascript" data-src="assets/js/zad01.js">
+        <code class="language-javascript"></code>    
     </pre>
-            <!-- 
-         -->
+    <div id="rozwiazanie01">Rozwiązanie</div>
     
-    <h2 id="zad02">
+   
+    <h3 id="zad02">
         Zadanie 2
-    </h2>
+    </h3>
     <p>
         Napisz funkcję o nazwie "tekstOdTylu", która przyjmuje parametr "tekst" który jest typu string. Funkcja ma zwracać ten wartość z tekst ale od tyłu.
     </p>
@@ -60,9 +70,9 @@
         np. tekstOdTylu('JavaScript') >>> 'tpircSavaJ'
     </code>
     
-    <h2 id="zad03">
+    <h3 id="zad03">
         Zadanie 3
-    </h2>
+    </h3>
     <p> 
         Napisz funkcję o nazwie "losowaLiczba", która zwraca losową liczbę między 5 a 10.
     </p>
@@ -166,8 +176,10 @@
         
         np.
         zlaczDwieTablice([2, 4, 2], [1, 6, 7]) >>> [1, 2, 2, 4, 6, 7] -->
-        <script type="text/javascript" src="assets/lib/prism.js"></script>
-        <script type="text/javascript" src="javascript_exercises.js"></script>
-        <script type="text/javascript" src="assets/js/zad01.js"></script>
-    </body>
+   </div>
+       
+        <script src="assets/js/javascript_exercises.js"></script>
+        <script src="assets/js/zad01.js"></script>
+
+        </body>
     </html>

@@ -1,0 +1,19 @@
+{
+  "name": "15-zadan-z-js",
+  "version": "1.0.0",
+  "description": "Wprawki w JavaScript - zadania z zajęć ( i próba rozwinięcia z HTML-em)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/darekdmr/15-zadan-z-JS.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/darekdmr/15-zadan-z-JS/issues"
+  },
+  "homepage": "https://github.com/darekdmr/15-zadan-z-JS#readme"
+}
